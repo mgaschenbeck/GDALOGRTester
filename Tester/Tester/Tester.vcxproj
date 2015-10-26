@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8CDB7053-C79C-4D40-810A-B7C9551F6A4B}</ProjectGuid>
+    <RootNamespace>Tester</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include\ogr;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include; C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include\alg</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\DGLABS\lib\dglabs\RandDFileIO\Debug_develop_x64\RandDFileIO_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libGeomBase\Debug_develop_x64\libGeomBase_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GAImage\Debug_develop_x64\GAImage_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libRaster\Debug_develop_x64\libRaster_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libgctp\Debug_1_3_2_x64\libgctp_Debug_1_3_2_x64.lib;C:\DGLABS\lib\dglabs\openjpeg\Debug_2alpha_modified_x64\openjpeg_Debug_2alpha_modified_x64.lib;C:\DGLABS\lib\dglabs\libGeodetic\Debug_develop_x64\libGeodetic_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libgtif\Debug_6_1_8_x64\libgtif_Debug_6_1_8_x64.lib;C:\DGLABS\lib\dglabs\libMetadata\Debug_0_0_3_x64\libMetadata_Debug_0_0_3_x64.lib;C:\DGLABS\lib\dglabs\PPVL\Debug_1_0_2_x64\PPVL_Debug_1_0_2_x64.lib;C:\DGLABS\lib\dglabs\EasyBMP\Debug_1_0_6_x64\EasyBMP_Debug_1_0_6_x64.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\geos_Debug_3_4_2_x64\lib\geos_i.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\geos_Debug_3_4_2_x64\lib\geos_c_i.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\curl_Debug_7_31_0_x64\lib\libcurl_debug.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\gdal.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\NCSEcwd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\lti_dsdk.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\lti_dsdk_cdll.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\zlib_Release_1_2_8_x64\lib\zlib.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\sqlite_Debug_3_8_5_x64\lib\sqlite3.lib;C:\DGLABS\lib\dglabs\libBatchScheduling\Debug_develop_x64\libBatchScheduling_Debug_develop_x64.lib;mpr.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\BinSchemes_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\CircleStencil_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\FA_PQ_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataTypes\Debug_develop_x64\GeoEyeDataTypes_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libUtil\Debug_develop_x64\libUtil_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libStatistics\Debug_develop_x64\libStatistics_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libChunk\Debug_1_1_1_x64\libChunk_Debug_1_1_1_x64.lib;glu32.lib;opengl32.lib;C:\DGLABS\lib\dglabs\generalfile_fileOPS\Debug_2_1_6_x64\generalfile_fileOPS_Debug_2_1_6_x64.lib;C:\DGLABS\lib\dglabs\GlobalsAndConstants\Debug_1_0_4_x64\GlobalsAndConstants_Debug_1_0_4_x64.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_timer-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_thread-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_chrono-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_date_time-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_filesystem-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_system-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_calib3d.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_ml.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_core.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_features2d.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_flann.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_legacy.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_imgproc.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_highgui.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_video.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_program_options-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\triangle_Debug_1_7_2_x64\lib\libTriangle.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\DGLABS\include\dglabs\RandDFileIO\develop;C:\DGLABS\include\dglabs\libBatchScheduling\develop;C:\DGLABS\include\dglabs\GeoEyeDataStructs\develop;C:\DGLABS\include\dglabs\GeoEyeDataTypes\develop;C:\DGLABS\include\dglabs\libUtil\develop;C:\DGLABS\include\dglabs\libGeomBase\develop;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\sqlite_Debug_3_8_5_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\geos_Debug_3_4_2_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\proj_Debug_4_8_0_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\curl_Debug_7_31_0_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\triangle_Debug_1_7_2_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\zlib_Release_1_2_8_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55.;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\include;C:\DGLABS\ThirdPartyPrebuilts\VS2013\eigen_Release_3_2_3_x64\include;E:\GitClones\libWarp\libWarp\inc;E:\GitClones\libWarp\libWarpDriver\inc;%(AdditionalIncludeDirectories);C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include\ogr;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include; C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\include\alg</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\DGLABS\lib\dglabs\RandDFileIO\Debug_develop_x64\RandDFileIO_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libGeomBase\Debug_develop_x64\libGeomBase_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GAImage\Debug_develop_x64\GAImage_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libRaster\Debug_develop_x64\libRaster_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libgctp\Debug_1_3_2_x64\libgctp_Debug_1_3_2_x64.lib;C:\DGLABS\lib\dglabs\openjpeg\Debug_2alpha_modified_x64\openjpeg_Debug_2alpha_modified_x64.lib;C:\DGLABS\lib\dglabs\libGeodetic\Debug_develop_x64\libGeodetic_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libgtif\Debug_6_1_8_x64\libgtif_Debug_6_1_8_x64.lib;C:\DGLABS\lib\dglabs\libMetadata\Debug_0_0_3_x64\libMetadata_Debug_0_0_3_x64.lib;C:\DGLABS\lib\dglabs\PPVL\Debug_1_0_2_x64\PPVL_Debug_1_0_2_x64.lib;C:\DGLABS\lib\dglabs\EasyBMP\Debug_1_0_6_x64\EasyBMP_Debug_1_0_6_x64.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\geos_Debug_3_4_2_x64\lib\geos_i.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\geos_Debug_3_4_2_x64\lib\geos_c_i.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\curl_Debug_7_31_0_x64\lib\libcurl_debug.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\gdal.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\NCSEcwd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\lti_dsdk.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\gdal_Debug_1_10_1_x64\lib\lti_dsdk_cdll.lib;odbc32.lib;odbccp32.lib;ws2_32.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\zlib_Release_1_2_8_x64\lib\zlib.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\sqlite_Debug_3_8_5_x64\lib\sqlite3.lib;C:\DGLABS\lib\dglabs\libBatchScheduling\Debug_develop_x64\libBatchScheduling_Debug_develop_x64.lib;mpr.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\BinSchemes_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\CircleStencil_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataStructs\Debug_develop_x64\FA_PQ_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\GeoEyeDataTypes\Debug_develop_x64\GeoEyeDataTypes_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libUtil\Debug_develop_x64\libUtil_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libStatistics\Debug_develop_x64\libStatistics_Debug_develop_x64.lib;C:\DGLABS\lib\dglabs\libChunk\Debug_1_1_1_x64\libChunk_Debug_1_1_1_x64.lib;glu32.lib;opengl32.lib;C:\DGLABS\lib\dglabs\generalfile_fileOPS\Debug_2_1_6_x64\generalfile_fileOPS_Debug_2_1_6_x64.lib;C:\DGLABS\lib\dglabs\GlobalsAndConstants\Debug_1_0_4_x64\GlobalsAndConstants_Debug_1_0_4_x64.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_timer-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_thread-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_chrono-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_date_time-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_filesystem-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\boost_x64\boost_1_55\lib\boost_system-mt-gd.lib;C:\DGLABS\ThirdPartyPrebuilts\VS2013\opencv_Debug_2_4_8_x64\lib\opencv_calib3d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
